@@ -1,0 +1,157 @@
+/* General resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Flexbox for the dashboard and card sections */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Flexbox for the card section */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* Responsive width for cards */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive grid for charts */
+.charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for charts */
+    gap: 20px;
+}
+
+/* Chart container styling */
+.chart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cards and charts responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cards take up full width on small screens */
+    }
+
+    .charts {
+        grid-template-columns: 1fr; /* Single column grid on smaller screens */
+    }
+}
+
+/* Larger screens (1200px and up) */
+@media (min-width: 1200px) {
+    .cards {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1 1 calc(25% - 20px); /* Cards take up a quarter of the row */
+    }
+}
+
+/* Tablets and small desktops (768px to 1199px) */
+@media (max-width: 1199px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Cards take up half of the row */
+    }
+
+    .charts {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for charts */
+    }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cards take full width */
+    }
+
+    .charts {
+        grid-template-columns: 1fr; /* Single column for charts */
+    }
+}
+
+/* Example styling for card colors */
+.red { background-color: #e74c3c; color: white; }
+.green { background-color: #2ecc71; color: white; }
+.blue { background-color: #3498db; color: white; }
+.purple { background-color: #9b59b6; color: white; }
+.yellow { background-color: #f1c40f; color: white; }
+.orange { background-color: #e67e22; color: white; }
+.grey { background-color: #7f8c8d; color: white; }
+.brown { background-color: #795548; color: white; }
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellowgreen;
+}
+/* Add stylish font and spacing to h2 headings */
+.section h2 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below heading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #f4b41a; /* Adds a line below heading */
+    padding-bottom: 10px;
+}
+
+/* Adjust spacing around charts for better visual separation */
+.section .charts {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    gap: 25px; /* Adds space between charts */
+}

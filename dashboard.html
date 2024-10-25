@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Dashboard for Sales and Expenditures</h1>
+    <div class="dashboard">
+        <!-- Top Cards Section -->
+        <div class="cards">
+            <div class="card red">
+                <h2>62 million</h2>
+                <p>Last month revenue</p>
+            </div>
+            <div class="card green">
+                <h2>780</h2>
+                <p>Orders Last Month</p>
+            </div>
+            <div class="card blue">
+                <h2>26.21</h2>
+                <p>Average Profit</p>
+            </div>
+            <div class="card purple">
+                <h2>60 cr</h2>
+                <p>Last year sales</p>
+            </div>
+        </div>
+
+        <!-- Charts Section (Sales) -->
+        <div class="charts">
+            <div class="chart" id="stackChart">
+                <img src="stackchart.png" alt="Stack Chart" style="width: 100%; height: 100%;">
+            </div>
+            <div class="chart" id="bubbleChart">
+                <img src="digitalchart.png" alt="Bubble Chart" style="width: 100%; height: 100%;">
+            </div>
+            <div class="chart" id="barChart">
+                <img src="linechart.png" alt="Expenditure Bar Chart" style="width: 100%; height: 100%;">
+            </div>
+            <div class="chart" id="areaChart">
+                <img src="areachart.jpeg" alt="Area Chart" style="width: 100%; height: 100%;">
+            </div>
+            <!-- Removed Donut Chart and Map Chart -->
+        </div>
+
+        <!-- New Section: Expenditures -->
+        <div class="section">
+            <h2>Expenditures Overview</h2>
+            <div class="cards">
+                <div class="card yellow">
+                    <h2>$500k</h2>
+                    <p>Total Expenditure</p>
+                </div>
+                <div class="card orange">
+                    <h2>$50k</h2>
+                    <p>Monthly Expenditure</p>
+                </div>
+                <div class="card grey">
+                    <h2>$20k</h2>
+                    <p>Miscellaneous Expenditure</p>
+                </div>
+                <div class="card brown">
+                    <h2>$10k</h2>
+                    <p>Other Costs</p>
+                </div>
+            </div>
+
+            <!-- Expenditure Charts Section -->
+            <div class="charts">
+                <div class="chart" id="expenditureStackChart">
+                    <img src="expenditure piechart.png" alt="Expenditure Stack Chart" style="width: 100%; height: 100%;">
+                </div>
+                <div class="chart" id="expenditureBubbleChart">
+                    <img src="expenditure bubblechart.png" alt="Expenditure Bubble Chart" style="width: 100%; height: 100%;">
+                </div>
+                <div class="chart" id="expenditureBarChart">
+                    <img src="expenditure barchart.png" alt="Expenditure Bar Chart" style="width: 100%; height: 100%;">
+                </div>
+                <div class="chart" id="expenditureDonutChart">
+                    <img src="expenditure areachart.png" alt="Expenditure Donut Chart" style="width: 100%; height: 100%;">
+                </div>
+                <!-- Removed Area Chart and Map Chart -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
