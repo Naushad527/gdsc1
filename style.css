@@ -131,10 +131,9 @@ img {
 .brown { background-color: #795548; color: white; }
 
 h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   text-align: center;
     color: yellowgreen;
+    margin-bottom:20px;
 }
 /* Add stylish font and spacing to h2 headings */
 .section h2 {
