@@ -132,8 +132,11 @@ img {
 
 h1{
    text-align: center;
-    color: yellowgreen;
+    color: black;
     margin-bottom:20px;
+    text-decoration:underline;
+    text-decoration-color:grey;
+    
 }
 /* Add stylish font and spacing to h2 headings */
 .section h2 {
