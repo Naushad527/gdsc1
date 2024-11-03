@@ -11,23 +11,21 @@ body {
     padding: 20px;
 }
 
-/* Flexbox for the dashboard and card sections */
 .dashboard {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Flexbox for the card section */
 .cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .card {
-    flex: 1 1 calc(25% - 20px); /* Responsive width for cards */
+    flex: 1 1 calc(25% - 20px); 
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -35,19 +33,18 @@ body {
     transition: transform 0.2s;
 }
 
-/* Hover effect for cards */
+
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Responsive grid for charts */
+
 .charts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for charts */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
 }
 
-/* Chart container styling */
 .chart {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -56,40 +53,38 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Images */
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
-}
 
-/* Cards and charts responsiveness for smaller screens */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
     }
 
     .card {
-        flex: 1 1 100%; /* Cards take up full width on small screens */
+        flex: 1 1 100%; 
     }
 
     .charts {
-        grid-template-columns: 1fr; /* Single column grid on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Larger screens (1200px and up) */
+
 @media (min-width: 1200px) {
     .cards {
         flex-direction: row;
     }
 
     .card {
-        flex: 1 1 calc(25% - 20px); /* Cards take up a quarter of the row */
+        flex: 1 1 calc(25% - 20px); 
     }
 }
 
-/* Tablets and small desktops (768px to 1199px) */
+
 @media (max-width: 1199px) {
     .cards {
         flex-direction: row;
@@ -97,26 +92,26 @@ img {
     }
 
     .card {
-        flex: 1 1 calc(50% - 20px); /* Cards take up half of the row */
+        flex: 1 1 calc(50% - 20px);
     }
 
     .charts {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for charts */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Mobile (up to 767px) */
+
 @media (max-width: 767px) {
     .cards {
-        flex-direction: column; /* Stack cards vertically */
+        flex-direction: column; 
     }
 
     .card {
-        flex: 1 1 100%; /* Cards take full width */
+        flex: 1 1 100%; 
     }
 
     .charts {
-        grid-template-columns: 1fr; /* Single column for charts */
+        grid-template-columns: 1fr; 
     }
 }
 
@@ -137,24 +132,24 @@ h1{
     text-decoration: underline;
    
 }
-/* Add stylish font and spacing to h2 headings */
+
 .section h2 {
     font-size: 1.8em;
     color: #333;
     text-align: center;
-    margin-bottom: 20px; /* Adds space below heading */
+    margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #f4b41a; /* Adds a line below heading */
+    border-bottom: 2px solid #f4b41a; 
     padding-bottom: 10px;
 }
 
-/* Adjust spacing around charts for better visual separation */
+
 .section .charts {
     padding-top: 10px;
     padding-bottom: 20px;
-    gap: 25px; /* Adds space between charts */
+    gap: 25px; 
 }
  .dashboard h2 {
     margin-bottom:20px ;
